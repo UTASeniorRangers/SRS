@@ -1,32 +1,255 @@
 Include a header paragraph specific to your product here. Customer requirements are those required features and functions specified for and by the intended audience for this product. This section establishes, clearly and concisely, the "look and feel" of the product, what each potential end-user should expect the product do and/or not do. Each requirement specified in this section is associated with a specific customer need that will be satisfied. In general Customer Requirements are the directly observable features and functions of the product that will be encountered by its users. Requirements specified in this section are created with, and must not be changed without, specific agreement of the intended customer/user/sponsor.
 
-\subsection{Requirement Name}
+\subsection{Android Application}
 \subsubsection{Description}
-A detailed description of the feature/function that satisfies the requirement. For example: \textit{The GUI background will be slate blue. This specific color is required in order to ensure that the GUI matches other similar software products offered by the customer. Slate blue is specified as \#007FFF, using six-digit hexadecimal color specification.} It is acceptable and advisable to include drawings/graphics in the description if it aids understanding of the requirement.
+Voiceprint will be an android application.
 \subsubsection{Source}
-The source of the requirement (e.g. customer, sponsor, specified team member (by name), federal regulation, local laws, CSE Senior Design project specifications, etc.)
+??
 \subsubsection{Constraints}
-A detailed description of realistic constraints relevant to this requirement. Economic, environmental, social, political, ethical, health \& safety, manufacturability, and sustainability should be discussed as appropriate.
+No iOS application will be produced due to time constraints and lack of resources.
 \subsubsection{Standards}
-A detailed description of any specific standards that apply to this requirement (e.g. \textit{NSTM standard xx.xxx.x. color specifications \cite{Rubin2012}}. Standards exist for practically everything (ATC standard fuses, IEEE 802.15.4 embedded wireless, TLS 1.3 encryption, etc.), so be sure that you research and document which ones will be followed in meeting this requirement.
+The application will need to adhere to Google's term of service on the Google Play Store.
 \subsubsection{Priority}
-The priority of this requirement relative to other specified requirements. Use the following priorities:
-\begin{itemize}
-\item Critical (must have or product is a failure)
-\item High (very important to customer acceptance, desirability)
-\item Moderate (should have for proper product functionality);
-\item Low (nice to have, will include if time/resource permits)
-\item Future (not feasible in this version of the product, but should be considered for a future release).
-\end{itemize}
-
-\subsection{Requirement Name}
+Critical
+\subsection{Google Cloud API}
 \subsubsection{Description}
-Detailed requirement description...
+The voiceprint app will use the Google Cloud API for voice command recognition.
 \subsubsection{Source}
-Source
+???
 \subsubsection{Constraints}
-Detailed description of applicable constraints...
+The technology involved in speech recognition will be constrained by Google's speech API ability. 
 \subsubsection{Standards}
-List of applicable standards
+Voice commands will be limited to the standards of Google's Cloud API for speech recognition. 
 \subsubsection{Priority}
-Priority
+Critical
+\subsection{User Friendly Interface}
+\subsubsection{Description}
+The application will feature an user friendly interface.
+\subsubsection{Source}
+???
+\subsubsection{Constraints}
+Some features may need some degree of technicality. 
+\subsubsection{Standards}
+The interface will need to meet Google Play's standards.
+\subsubsection{Priority}
+High
+\subsection{STL files stored on external server}
+\subsubsection{Description}
+A user can select and print from an STL file stored on an external server.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+External server use may be limited due to authentication or user permission.
+\subsubsection{Standards}
+The app will need to adhere to the standards involving file access from various external servers owned by different companies.
+\subsubsection{Priority}
+High
+\subsection{STL files within the app}
+\subsubsection{Description}
+A user can select and print from an STL file stored locally within the app on the device
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Device storage capacity and OS may set constraints for this feature
+\subsubsection{Standards}
+App must be able to work with the device's storage standards.
+\subsubsection{Priority}
+High
+\subsection{Set Precision}
+\subsubsection{Description}
+The user has the ability to set the precision for the print job
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Precision settings are limited to the set voice commands in the application
+\subsubsection{Standards}
+The app must work with the precision settings/standards of Octoprint
+\subsubsection{Priority}
+High
+\subsection{Set infill}
+\subsubsection{Description}
+The user has the ability to set the infill for a print job
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Infill settings are limited to the set voice commands in the application
+\subsubsection{Standards}
+The app must work with the infill settings/standards of Octoprint
+\subsubsection{Priority}
+High
+\subsection{Set supports}
+\subsubsection{Description}
+The user has the ability to set the supports for the print job
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Support settings are limited to the set voice commands in the application
+\subsubsection{Standards}
+The app must work with the support settings/standards of Octoprint
+\subsubsection{Priority}
+High
+\subsection{Set brim/raft}
+\subsubsection{Description}
+The user has the ability to set a brim or raft around an object
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Brim/raft settings are limited to the set voice commands in the application
+\subsubsection{Standards}
+The app must work with the brim/raft settings/standards of Octoprint
+\subsubsection{Priority}
+High
+\subsection{Slice STL file into Gcode file}
+\subsubsection{Description}
+The user has the ability to slice an STL file into a Gcode file using Octoprint
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Constraints involving how a file needs to be converted may be present.
+\subsubsection{Standards}
+STL file standards as well as Gcode standards must be met.
+\subsubsection{Priority}
+High
+\subsection{Expected wait time}
+\subsubsection{Description}
+The application shall display the expected wait time for a given print job.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Expected wait times will have a some degree of error depending on connection/printer/etc.
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{App - User interaction}
+\subsubsection{Description}
+The application will interact with the user through the use of audio prompts, voice commands, and the device's touchscreen.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+The device's audio/touch capabilities.
+\subsubsection{Standards}
+Android OS standards involving the before mentioned interactions.
+\subsubsection{Priority}
+High
+\subsection{Status Messages}
+\subsubsection{Description}
+The application will receive status messages from a Raspberry Pi and display them to the user in the application's GUI.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{Welcome Message}
+\subsubsection{Description}
+Voiceprint will display a welcome message on the screen when the app is opened by the user.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+Low
+\subsection{STL file display}
+\subsubsection{Description}
+The voiceprint application shall display a list of STL files that may be sliced and printed using icons, text, or some combination of the two.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{Display Settings}
+\subsubsection{Description}
+The application shall display the settings that the user has previously set. This allows the user to review their settings before initializing the print job.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{User Setting Adjustment}
+\subsubsection{Description}
+Prior to printing, the user can go back to a previous step in the process and edit any of the user-adjustable settings.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{Print Job Setting Access}
+\subsubsection{Description}
+Once a print job has begun, Voiceprint shall not allow the user to change any of the printer's settings.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{Cancel Print}
+\subsubsection{Description}
+While the 3D printer is printing and the VoicePrint app is open, the app shall display a "Cancel Print" button on the device's screen. Once the "Cancel Print" button is pressed the current print job will be canceled.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{User Count}
+\subsubsection{Description}
+The application shall support up to one user at a time.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{Help}
+\subsubsection{Description}
+Voiceprint shall have a "Help" activity that displays a list of acceptable voice commands. This menu can be accessed by saying "Help" at any time during normal operation of the app.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{Download STL from external server}
+\subsubsection{Description}
+The application shall be able to download STL files from an external server.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+???
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
+\subsection{File Information}
+\subsubsection{Description}
+Voiceprint shall display relevant information about the STL files such as the filename, file size, and estimated print time.
+\subsubsection{Source}
+Peter Severynen
+\subsubsection{Constraints}
+Estimated print time will have some error.
+\subsubsection{Standards}
+???
+\subsubsection{Priority}
+High
