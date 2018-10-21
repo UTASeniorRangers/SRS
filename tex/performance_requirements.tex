@@ -1,13 +1,159 @@
 Include a header paragraph specific to your product here. Performance requirements address items such as: how fast specific critical operations must complete; how long it takes to start/stop activities; how long the battery must last; maximum time it must take to set up; etc.
 
-\subsection{Requirement Name}
+\subsection{Voice Commands}
 \subsubsection{Description}
-Detailed requirement description...
+Voiceprint will accept voice commands from the user
 \subsubsection{Source}
-Source
+Interface
 \subsubsection{Constraints}
-Detailed description of applicable constraints...
+NA
 \subsubsection{Standards}
-List of applicable standards
+NA
 \subsubsection{Priority}
-Priority
+Critical \\
+\\
+\subsection{Transcribe Commands}
+\subsubsection{Description}
+Voiceprint will have a mechanism that translates recorded voice prompts into text
+\subsubsection{Source}
+Interface
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+Voiceprint transcribe depends on the three methods of Google's Speech API. Voiceprint will decide to use one of the following methods.
+1. Synchronous Recognition
+2. Asynchronous Recognition
+3. Streaming Recognition
+\subsubsection{Priority}
+Critical\\
+\\
+\subsection{Interpret Voice Commands}
+\subsubsection{Description}
+Voiceprint will interpret translated text into printer commands
+\subsubsection{Source}
+Interface
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{Send Print Commands}
+\subsubsection{Description}
+Voiceprint will send interpreted printer commands to a connected 3D printer
+\subsubsection{Source}
+Interface
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{Wireless Connection}
+\subsubsection{Description}
+Voiceprint will provide wireless connection to printing software such as OctoPrint
+\subsubsection{Source}
+Interface
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{Wireless Connection}
+\subsubsection{Description}
+Voiceprint will provide wireless connection to printing software such as OctoPrint
+\subsubsection{Source}
+Interface
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{OctoPrint Commands}
+\subsubsection{Description}
+Voiceprint will support OctoPrint Compatible commands using text strings
+\subsubsection{Source}
+Commands
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+VoicePrint follows OctoPrint standards for commands
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{Input}
+\subsubsection{Description}
+Voiceprint shall accepts as input an STL file delivered over a wireless network
+\subsubsection{Source}
+Interface
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{OctoPi 1.3.9}
+\subsubsection{Description}
+Voiceprint shall transmit OctroPrint compatible commands to a raspberry Pi running OctoPi 1.3.9 over a wireless network
+\subsubsection{Source}
+Support
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+\subsection{STL transcribed to Gcode}
+\subsubsection{Description}
+Voiceprint shall use OCtoprint to slice STL files into Gcode files which support a 3D printer to print an object
+\subsubsection{Source}
+Print
+\subsubsection{Constraints}
+NA
+\subsubsection{Standards}
+NA
+\subsubsection{Priority}
+Critical \\
+\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
